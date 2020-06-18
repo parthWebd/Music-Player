@@ -1,0 +1,549 @@
+/*width 600 px or less*/
+body{
+	
+	background-image: linear-gradient(364deg, #ff3c00, #8b0d0d);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 5px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#everything{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .1% 1%;
+	border: 2px solid black;
+
+}
+#header{
+	height: 7%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+#header-left{
+	height: 100%;
+	width: 27%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2px
+}
+/*left header*/
+ div{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ #player-logo{
+	height: 100%;
+    width: 45%;
+	
+}
+#player-logo img{
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+#player-name{
+	/*height: 100%;
+	width: 67%;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 1.5rem;
+	justify-content: flex-start;
+	align-items: center;
+	color: black;*/
+	display: none;
+}
+
+#favourites{
+	height: 100%;
+	width: 55%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+#favourites a{
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+	color: black;
+	font-size: .8rem;
+}
+/*left header*/
+#header-right{
+	height: 100%;
+	width: 73%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	padding: 2px
+}
+/* header right*/
+#search-bar{
+	height: 60%;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	background-color: #670209;
+	box-sizing: border-box;
+	border: 0 solid red;
+	border-radius: 4px;
+}
+.search{
+	height: 100%;
+}
+#search-bar input{
+	width: 70%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: none;
+	color: black;
+
+}
+
+#search-bar div{
+	width: 15%;
+	text-align: center;
+	display: table;
+}
+#search-bar div i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+::placeholder {
+  color: black;
+}
+
+#notification-bell{
+	height: 60%;
+	width: 12%;
+	display: table;
+	text-align: center;
+}
+#notification-bell i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#login-menu{
+	height: 86%;
+    width: 11%;
+	background-color: #670209;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*display: table;
+	text-align: center;*/
+}
+#login-menu img{
+	background-size: contain;
+	height: 80%;
+	width: 80%;
+	border-radius: 50%;
+	/*display: table-cell;
+	vertical-align: middle;*/
+}
+/*Header right*/
+#main{
+	height: 80%
+	width:100%;
+	border: 1px dashed green;
+}
+#player{
+	height: 10%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 0%;
+    right: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(364deg, #670209, #920808);
+    
+}
+/*width 600 px or less*/
+
+/*medium devices*/
+@media only screen and (min-width: 600px) {
+body{
+	
+	background-image: linear-gradient(364deg, #ff3c00, #8b0d0d);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 5px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#everything{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .1% 1%;
+	border: 2px solid black;
+
+}
+#header{
+	height: 7%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+#header-left{
+	height: 100%;
+	width: 27%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2px
+}
+/*left header*/
+ div{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ #player-logo{
+	height: 100%;
+    width: 45%;
+	
+}
+#player-logo img{
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+#player-name{
+	/*height: 100%;
+	width: 67%;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 1.5rem;
+	justify-content: flex-start;
+	align-items: center;
+	color: black;*/
+	display: none;
+}
+#favourites{
+	height: 100%;
+	width: 55%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+#favourites a{
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+	color: black;
+	font-size: .8rem;
+}
+/*left header*/
+#header-right{
+	height: 100%;
+	width: 73%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	padding: 2px
+}
+/* header right*/
+#search-bar{
+	height: 60%;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	background-color: #670209;
+	box-sizing: border-box;
+	border: 0 solid red;
+	border-radius: 4px;
+}
+.search{
+	height: 100%;
+}
+#search-bar input{
+	width: 70%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: none;
+	color: black;
+
+}
+
+#search-bar div{
+	width: 15%;
+	text-align: center;
+	display: table;
+}
+#search-bar div i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+::placeholder {
+  color: black;
+}
+
+#notification-bell{
+	height: 60%;
+	width: 12%;
+	display: table;
+	text-align: center;
+}
+#notification-bell i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#login-menu{
+	height: 86%;
+    width: 11%;
+	background-color: #670209;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*display: table;
+	text-align: center;*/
+}
+#login-menu img{
+	background-size: contain;
+	height: 80%;
+	width: 80%;
+	border-radius: 50%;
+	/*display: table-cell;
+	vertical-align: middle;*/
+}
+/*Header right*/
+#main{
+	height: 80%
+	width:100%;
+	border: 1px dashed green;
+}
+#player{
+	height: 10%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 0%;
+    right: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(364deg, #670209, #920808);
+    
+}
+}
+/*medium devices*/
+
+/*Bigger devices*/
+@media only screen and (min-width: 828px) {
+body{
+	
+	background-image: linear-gradient(364deg, #ff3c00, #8b0d0d);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 5px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#everything{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .1% 15%;
+	border: 2px solid black;
+
+}
+
+/*Header Left*/
+#header{
+	height: 7%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+#header-left{
+	height: 100%;
+	width: 50%;
+	
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	padding: 2px
+}
+
+#player-logo{
+	height: 100%;
+    width: 14%;
+	
+}
+#player-logo img{
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+#player-name{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 1.5rem;
+	justify-content: flex-start;
+	align-items: center;
+	color: black;
+}
+#player-name span{
+	display: block;
+}
+#favourites{
+	height: 100%;
+	width: 55%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+#favourites a{
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+	color: black;
+	font-size: .8rem;
+}
+/*Header Left*/
+/*Header Right*/
+#header-right{
+	height: 100%;
+	width: 50%;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	padding: 2px
+}
+#search-bar{
+	height: 60%;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	background-color: #670209;
+	box-sizing: border-box;
+	border: 0 solid red;
+	border-radius: 4px;
+}
+.search{
+	height: 100%;
+}
+#search-bar input{
+	width: 70%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: none;
+	color: black;
+
+}
+
+#search-bar div{
+	width: 15%;
+	text-align: center;
+	display: table;
+}
+#search-bar div i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+::placeholder {
+  color: black;
+}
+
+#notification-bell{
+	height: 60%;
+	width: 12%;
+	display: table;
+	text-align: center;
+}
+#notification-bell i{
+	height: 80%;
+	width: 80%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#login-menu{
+	height: 86%;
+    width: 11%;
+	background-color: #670209;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*display: table;
+	text-align: center;*/
+}
+#login-menu img{
+	background-size: contain;
+	height: 80%;
+	width: 80%;
+	border-radius: 50%;
+	/*display: table-cell;
+	vertical-align: middle;*/
+}
+/*Header Right*/
+}
+/*Bigger devices*/
