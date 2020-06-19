@@ -168,11 +168,7 @@ body{
 	vertical-align: middle;*/
 }
 /*Header right*/
-#main{
-	height: 80%
-	width:100%;
-	border: 1px dashed green;
-}
+
 #player{
 	height: 10%;
     width: 100%;
@@ -184,6 +180,116 @@ body{
     background-image: linear-gradient(364deg, #670209, #920808);
     
 }
+/*Main*/
+
+#main{
+	height: 80%;
+	width:100%;
+	border: 2px dashed green;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+#main-left-content{
+	height: 100%;
+	width:70%;
+	border: 2px dashed green;
+	box-sizing: border-box; 
+}
+
+
+/*Main-right-queue*/
+#main-right-queue{
+	height: 100%;
+	width: 30%;
+}
+#Queue-Header{
+	height: 8%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#Queue-Header-left{
+	height: 100%;
+	width: 60%;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+#Queue-Header-right{
+	height: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.2rem;
+}
+/*#dropdownbtn{
+	
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+}
+#dropdown-content{
+	display: none;
+	position: absolute;
+	min-width:200px;
+	right: 0;
+	z-index: 1;
+	padding: 5px;
+	background-color: white;
+}
+#dropdown-content ul li{
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+#dropdownbtn:hover #dropdown-content{
+	display: block;
+}*/
+#Queue-Dropdown-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: #f9f9f9;
+}
+#Queue-Dropdown-content div{
+	width: 100%;
+	text-align: center;
+	background-color: #670209;
+}
+#Queue-Dropdown-content:hover div:hover{
+	background-color: #eca4a4;
+	/*background-image: linear-gradient(364deg, #670209, #920808);*/
+}
+#drop-arrow{
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+}
+#Queue-Dropdown{
+	display: none;
+	position: absolute;
+	min-width:200px;
+	right: 0;
+	z-index: 1;
+	padding: 5px;
+	background-color: #670209;
+}
+#drop-arrow:hover #Queue-Dropdown{
+	display: block;
+}
+/*Main-right-queue*/
+
+/*Main*/
 /*width 600 px or less*/
 
 /*medium devices*/
@@ -356,11 +462,7 @@ body{
 	vertical-align: middle;*/
 }
 /*Header right*/
-#main{
-	height: 80%
-	width:100%;
-	border: 1px dashed green;
-}
+
 #player{
 	height: 10%;
     width: 100%;
@@ -545,5 +647,6 @@ body{
 	vertical-align: middle;*/
 }
 /*Header Right*/
+
 }
 /*Bigger devices*/
