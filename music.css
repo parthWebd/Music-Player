@@ -198,6 +198,34 @@ body{
 	border: 2px dashed green;
 	box-sizing: border-box; 
 }
+/*main-left*/
+.zoom{
+	height: 30%;
+	width: 100%;
+}
+.zoom ul{
+	height: 100%;
+	width: 100%;
+}
+#zoom-list{
+	display: inline-block;
+	height: 100%;
+	width: 30%;
+	transition: transform .2s;
+	margin: 0 auto;
+}
+
+#zoom-list img{
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+}
+.zoom-list img:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+/*main-left*/
 
 
 /*Main-right-queue*/
