@@ -1,7 +1,3 @@
-
-/*Bigger devices*/
-@media only screen and (min-width: 1280px) {
-
 .main-heading{
 	font-weight: bold;
 	font-size: 2rem;
@@ -24,13 +20,24 @@
 	color: white;
 	font-size: 1.5rem;
 }
+.show-mob{
+	display: none;
+}
+.show-tab{
+	display: none;
+}
+
+
+
+
+
 body{
 	
 	background-image: linear-gradient(364deg, #ff3c00, #8b0d0d);
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
-	padding: 5px;
+	padding: 0;
 	color: #ff9800;
 	box-sizing: border-box;
 	position: relative;
@@ -154,7 +161,7 @@ body{
 	box-sizing: border-box;
 	background-color: transparent;
 	border: none;
-	color: black;
+	color: #FF9800;
 
 }
 
@@ -205,6 +212,15 @@ body{
 	vertical-align: middle;*/
 }
 /*Header Right*/
+
+
+
+
+
+/*Bigger devices*/
+
+
+
 /*pop-creator-things*/
 #pop-creator-things{
 	position: absolute;
@@ -221,7 +237,7 @@ body{
 /*Main*/
 
 #main{
-	height: 84%;
+	height: 85%;
 	width:100%;
 	position :relative;
 	display: flex;
@@ -251,9 +267,10 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	list-style-type: none;
 }
 #zoom-list{
-	display: inline-block;
+	
 	height: 100%;
 	width: 30%;
 	transition: transform .2s;
@@ -265,7 +282,7 @@ body{
 	width: 100%;
 	background-size: contain;
 }
-.zoom-list img:hover{
+#zoom-list img:hover{
 	transform: scale(1.2);
 	cursor: pointer;
 }
@@ -300,7 +317,7 @@ body{
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 #latest-item-img {
 	height: 100%;
@@ -330,7 +347,7 @@ body{
 	opacity: .8
 }
 #latest-item-right{
-	height: 20%;
+	height: 100%;
 	width: 65%;
 	display: flex;
 	flex-direction: column;
@@ -358,14 +375,21 @@ body{
 	padding-left: 0px;
 	margin-top: 4%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	overflow-x: scroll;
 
 }
+#zoom-inside::-webkit-scrollbar{
+	display: none;
+}
+
 .zoom-in{
 	height: 100%;
-	width: 31%;
+	width: 32%;
+	margin-right: 2%;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -415,13 +439,18 @@ body{
 	width: 100%;
 	
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	overflow-x: scroll;
+}
+.Popular-creator-main::-webkit-scrollbar{
+	display: none;
 }
 .pop-creator{
 	height: 100%;
-	width: 16%;
+	width: 20%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -468,13 +497,19 @@ body{
 	height: 80%;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	overflow-x: scroll;
+}
+.la-liga-main::-webkit-scrollbar{
+	display: none;
 }
 .la-liga-element{
-	height: 100%;
-	width: 19%;
-	
+	height: 95%;
+	width: 32%;
+	margin-right: 2%;
 }
 .la-liga-img{
 	height: 75%;
@@ -643,19 +678,24 @@ body{
 	width: 100%;
 	box-sizing: border-box;
 	padding-top: 15px;
-	overflow-y: scroll; 
+	/*overflow-y: scroll; */
 	
 }
-#Queue-Main::-webkit-scrollbar{
+/*#Queue-Main::-webkit-scrollbar{
 	display: none;
 }
-
+*/
 .decimal-leading{
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	
+	overflow-y: scroll;
+	
+}
+.decimal-leading::-webkit-scrollbar{
+	display: none;
 }
 .decimal-leading li{
 	list-style-type: decimal-leading-zero;
@@ -690,6 +730,7 @@ body{
 }
 .li-con span{
 	display: block;
+	white-space: nowrap;
 }
 .li-heart{
 	height: 100%;
@@ -703,6 +744,16 @@ body{
 }
 
 /*Main Queue*/
+
+/*left open*/
+#left-open{
+	height: 100%;
+	width: 3%;
+	display: none;
+	position: relative;
+}
+/*left open*/
+
 /*Player*/
 
 #player{
@@ -726,6 +777,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 }
 #Player-center{
 	height: 100%;
@@ -743,6 +795,20 @@ body{
 	align-items: center;
 	justify-content: space-between;
 }
+#top-left{
+	display: none;
+}
+#top-right{
+	display: none;
+}
+#top-center{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
 #song-img{
 	height: 60%;
 	width: 20%;
@@ -758,6 +824,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
+	white-space: nowrap;
 }
 #song-name span{
 	display: block;
@@ -850,7 +917,350 @@ body{
 	align-items: center;
 	margin-bottom: -4px;
 }
+#hidden-queue{
+	position: absolute;
+	display: none;
+	bottom: 0;
+	right: 0;
+	height: 84vh;
+	width: 35vw;
+	background-image: linear-gradient(364deg, #670209, #920808);
+
+}
 
 /*Player*/
 
-/*Bigger devices*/
+/*Medium devices*/
+@media only screen and (max-width: 1200px) {
+
+#everything{
+	padding: 10px 40px;
+}
+#player{
+    padding: 4px 40px;
+}
+#header{
+	padding: 0px;
+}
+#main-left-content{
+	padding: 0px ; 
+	padding-right: 5px;
+}
+@media only screen and (max-width: 1200px) {
+
+#everything{
+	padding: 4px 25px;
+}
+#player{
+    padding: 5px 25px;
+}
+#header{
+	padding: 0px;
+}
+#main-left-content{
+	padding: 0px ; 
+	padding-right: 5px;
+}
+@media only screen and (max-width: 1024px) {
+
+#everything{
+	padding: 0 0 0 10px;
+}
+#player{
+    padding: 0 0 0 10px;
+    z-index: 1002;
+}
+#header{
+	padding: 0px;
+}
+#main{
+	justify-content: space-between;
+}
+#main-left-content{
+	padding: 0px ; 
+	width: 95%;
+}
+#main-right-queue{
+	display: none;
+}
+#Queue-Main {
+    height: 100%;
+    padding-top: 5px;
+}
+
+.queue-ham:hover{
+	cursor: pointer;
+}
+#hidden-queue{
+	z-index: 200;
+}
+#left-open:hover #hidden-queue{
+	display: block;
+	background-color: black;
+}
+#left-open{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(364deg, #670209, #920808);
+}
+.zoom-in{
+	width: 42%;
+	margin-right: 2%;
+}
+.pop-creator {
+    width: 23%;
+}
+}
+@media only screen and (max-width: 780px) {
+
+.show-tab{
+	display: block;
+}
+/*top carasoul*/
+#zoom-list img:hover{
+	transform: none;
+	cursor: pointer;
+}
+.zoom{
+	overflow: hidden;
+}
+.zoom ul{
+	width: 400%;
+	position: relative;
+	left: 0;
+	margin: 0;
+	animation: 5s slider infinite;
+}
+#zoom-list{
+	width: 25%
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	80%{
+		left: -200%;
+	}
+	85%{
+		left: -300%;
+	}
+	100%{
+		left: -300%;
+	}
+}
+
+/*top carasoul*/
+
+
+#hidden-queue {
+	width: 45vw;
+}
+.HIDE{
+	display: none;
+}
+#player{
+	justify-content: center;
+}
+#Player-left{
+	width: 15%;
+	display: none;
+}
+#Player-right{
+	display: none;
+	width: 15%;
+}
+.sound-bar-big{
+	width: 90%;
+}
+#Player-center{
+	height: 100%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Player-center-top{
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 2%;
+}
+#top-left{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+#top-center{
+	width: 40%;
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+#top-right{
+	width: 10%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+#song-img{
+	height: 100%;
+	width: 25%;
+}
+#song-name{
+	height: 80%;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+}
+/*Medium devices*/
+/*Smaller Devices*/
+@media only screen and (max-width: 600px) {
+#player{
+    padding: 0 0 0 0px;
+    z-index: 1002;
+}
+
+/*Header*/
+#player-name{
+	display: none;
+}
+#header-left{
+	display: none;
+}
+
+#player-logo{
+	width: 13%;
+}
+#header-right{
+	width: 100%;
+	justify-content: space-between;
+}
+#search-bar{
+	width: 64%;
+}
+#notification-bell {
+    width: 4%;
+}
+#favourites{
+	display: none;
+}
+/*Header*/
+
+
+/*Player*/
+#hidden-queue {
+	width: 78vw;
+}
+.hide-mob{
+	display: none;
+}
+.show-mob{
+	display: block;
+}
+#top-center {
+    margin-right: 0;
+    width: 40%;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+#Player-center-top {
+    padding: 0 ;
+}
+#top-left{
+	width: 60%;
+}
+#top-right{
+	display: none;
+}
+.player-time{
+	display: none;
+}
+.sound-bar-big {
+    width: 100%;
+}
+/*Player*/
+
+/*Latest-Release*/
+
+#latest-heading{
+	height: 25%;
+}
+
+#latest-container {
+    height: 18%;
+}
+#latest{
+	height: 69%;
+	overflow-y: scroll;
+}
+#latest::-webkit-scrollbar{
+	display: none;
+}
+#latest-item{
+	height: 101%;
+	width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 2%;
+	
+}
+/*Latest-Release*/
+
+
+
+/*Zoom-in*/
+.zoom-in{
+	width: 68%;
+	margin-right: 2%;
+}
+/*Zoom-in*/
+
+/*pop-creator*/
+.pop-creator{
+	width: 36%;
+	margin-right: 5%;
+}
+/*pop-creator*/
+
+/*International*/
+
+.la-liga-element {
+    width: 42%;
+    margin-right: 2%;
+}
+/*International*/
+
+/*Stadium*/
+.stad {
+	width: 37%;
+}
+/*Stadium*/
+}
+/*Smaller Devices*/
